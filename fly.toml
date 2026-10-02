@@ -4,7 +4,7 @@
 #
 
 app = 'mealmanager'
-primary_region = 'iad'
+primary_region = 'fra'
 
 [build]
 
@@ -21,3 +21,7 @@ primary_region = 'iad'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
+
+[mounts]
+  source = "sqlite_data_fra"
+  destination = "/app/data"
